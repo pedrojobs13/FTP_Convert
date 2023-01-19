@@ -35,7 +35,7 @@ export function Home_02() {
   }
   function DeleteFtp(DeleteFtpClick) {
     const ftpWithoutDeleteOne = ftp.filter((ftpValue) => {
-      ftpValue != DeleteFtpClick;
+      return ftpValue != DeleteFtpClick;
     });
     setFtp(ftpWithoutDeleteOne);
   }
