@@ -35,7 +35,7 @@ export function Home() {
   }
   function deleteFtpName(deleteFtpCard) {
     const deleteFtp = ftp.filter((fptCard) => {
-      fptCard != deleteFtpCard;
+      return fptCard != deleteFtpCard;
     });
     setFtp(deleteFtp);
   }
