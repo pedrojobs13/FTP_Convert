@@ -9,17 +9,17 @@ export function Home() {
     let currentUrl = ftpName;
     if (
       currentUrl.includes(
-        "ftp://diario%2540alegre.es.gov.br@ftp.alegre.es.gov.br/"
+        "ftp://diario%40alegre.es.gov.br@ftp.alegre.es.gov.br/"
       )
     ) {
       const newFtp = {
         name: ftpName.replace(
-          "ftp://diario%2540alegre.es.gov.br@ftp.alegre.es.gov.br/",
+          "ftp://diario%40alegre.es.gov.br@ftp.alegre.es.gov.br/",
           "https://alegre.es.gov.br/arquivos/"
         ),
         value: decodeURI(
           ftpName.replace(
-            "ftp://diario%2540alegre.es.gov.br@ftp.alegre.es.gov.br/",
+            "ftp://diario%40alegre.es.gov.br@ftp.alegre.es.gov.br/",
             "https://alegre.es.gov.br/arquivos/"
           )
         ),
